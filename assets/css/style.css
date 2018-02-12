@@ -283,7 +283,7 @@ h3,
 @media screen and (max-width: 640px) {
   .work {
       float: none; 
-      margin: 0 auto;
+      align-items: center;
   }
 }
 
@@ -295,6 +295,12 @@ h3,
   width: 100%;
   border: 0 none;
   opacity: 0.8;
+}
+
+@media screen and (max-width: 640px) {
+  .work img {
+      display: block;
+  }
 }
 
 .work h3 {
