@@ -6,6 +6,13 @@ body {
   background: url("../images/dust_scratches.png");
 }
 
+@media screen and (max-width: 640px) {
+  body {
+    font-size: 12px;
+    line-height: 1.5em; 
+  }
+}
+
 * {
   box-sizing: border-box;
 }
@@ -24,6 +31,15 @@ h2,
 h3,
 p {
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 640px) {
+  h1,
+  h2,
+  h3,
+  p {
+   margin-bottom: 10px;   
+  }
 }
 
 p:last-child {
@@ -45,6 +61,13 @@ h1 {
   border-bottom: 3px solid #ddd;
 }
 
+
+@media screen and (max-width: 640px) {
+  h1 {
+    padding-bottom: 5px;   
+  }
+}
+
 h2,
 h3 {
   font-size: 22px;
@@ -63,6 +86,15 @@ h3 {
   border-bottom: 2px solid #ccc;
 }
 
+@media screen and (max-width: 640px) {
+  #masthead {
+    position: static;
+    text-align: center;
+    margin: 0;
+    background: #4aaaa5;
+  }
+}
+
 #logo {
   float: left;
   width: 400px;
@@ -77,9 +109,24 @@ h3 {
   background: #4aaaa5;
 }
 
+@media screen and (max-width: 640px) {
+  #logo {
+    float: none;
+    line-height: 60px;    
+  }
+}
+
 nav {
   float: right;
   margin-top: 25px;
+}
+
+@media screen and (max-width: 640px) {
+  nav {
+    float: none;
+    margin-top: 0;
+    background: #fff;
+  }
 }
 
 nav a {
@@ -121,12 +168,43 @@ footer {
   border: 1px solid #ddd;
 }
 
+/*@media screen and (max-width: 980px;) {
+  .sidebear {
+      width: 100%;
+    
+  }
+}
+
+@media screen and (max-width: 768px;) {
+  .sidebear {
+    float: left;
+    margin: 0px;
+    
+  }
+}*/
+
+@media screen and (max-width: 640px) {
+  .sidebar {
+    width: 110%;
+    float: none;
+    margin: 0 auto;
+  }
+}
+
 h3,
 .sidebar h2 {
   padding-bottom: 20px;
   margin-bottom: 15px;
   line-height: 22px;
   border-bottom: 2px solid #eee;
+}
+
+@media screen and (max-width: 640px) {
+  h3,
+  .sidebar h2 {
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+  }
 }
 
 .social {
@@ -140,10 +218,21 @@ h3,
   margin-right: 0;
 }
 
+@media screen and (max-width: 640px) {
+  #connect {
+    text-align: left;
+  }
+}
 /* main */
 
 #main-container {
   padding-top: 130px;
+}
+
+@media screen and (max-width: 640px) {
+  #main-container {
+      padding-top: 5px; 
+  }
 }
 
 .main-section {
@@ -156,6 +245,31 @@ h3,
   border: 1px solid #ddd;
 }
 
+/*@media screen and (max-width: 980px;) {
+  .main-section {
+      width: 100%;
+    
+  }
+}
+
+@media screen and (max-width: 768px;) {
+  .main-section {
+      width: 75%;
+    
+  }
+}*/
+
+@media screen and (max-width: 640px) {
+  .main-section {
+      width: 75%;
+      margin: 0 auto;
+      float: none;
+      overflow: auto;
+      margin-bottom: 10px;
+      padding: 10px;  
+  }
+}
+
 /* portfolio page */
 
 .work {
@@ -164,6 +278,13 @@ h3,
   width: 274px;
   margin: 20px 0 25px;
   overflow: auto;
+}
+
+@media screen and (max-width: 640px) {
+  .work {
+      float: none; 
+      margin: 0 auto;
+  }
 }
 
 .work:nth-child(even) {
@@ -192,10 +313,19 @@ h3,
 
 .auth-image {
   float: left;
-  width: 200px;
+  width: auto;
   height: auto;
   margin-top: 10px;
   margin-right: 25px;
+}
+
+@media screen and (max-width: 640px) {
+  .auth-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    justify-content: center;
+  }
 }
 
 /* contact page */
